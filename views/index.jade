@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    .row 
+        div(class="col-lg-4 col-offset-4")
+            form(name="register", action="/", method="post", class="form-inline")
+                input(type="text", id="task", class="form-control", name="task", placeholder="Enter task")
+                input(type="submit", value="Add", class="btn btn-primary pull-right")
+            ul#tasklist.list-unstyled
+                each task in tasklist 
+                    form(method="post", action="/delete/" + task, class="form-inline") 
+                        li #{task} 
+                            input(type="submit", id="delete", value="Delete", class="btn btn-danger pull-right")
+

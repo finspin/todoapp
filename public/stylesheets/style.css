@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#tasklist {
+margin: 50px 0 0 0;
+font-size: 21px;
+}
+
+#tasklist li {
+margin: 0 0 15px 0;
+}
+
+#task {
+width: 350px;
+}
+
+.btn {
+width: 100px;
+}
